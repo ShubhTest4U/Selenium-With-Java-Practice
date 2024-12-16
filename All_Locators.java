@@ -10,7 +10,7 @@ public class All_Locators {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
@@ -28,7 +28,7 @@ public class All_Locators {
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 		System.out.println(driver.findElement(By.xpath("//p[@class='infoMsg']")).getText());
 		driver.close();
-		
+
 
 	}
 
