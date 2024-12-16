@@ -3,7 +3,7 @@ package selenium_Learning;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.*;
+import org.testng.Assert;
 
 public class Locators2 {
 
@@ -24,7 +24,7 @@ public class Locators2 {
 		driver.close();
 
 	}
-	
+
 	public static  String getPassword(WebDriver driver) throws InterruptedException {
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.linkText("Forgot your password?")).click();
@@ -52,7 +52,7 @@ public class Locators2 {
 		//1st index - to Login.
 
 
-		
+
 	}
 
 }
